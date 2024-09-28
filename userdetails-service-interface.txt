@@ -1,0 +1,12 @@
+UserDetailsService interface
+=============================
+Implementation of loadUserByUsername() method of this interface will be provided by you.This method will be called by spring framework when user will submit login form.In this method spring framework will pass username(It is coming from login form)
+loadUserByUsername() method must return object of UserDetails interface to the caller.This object(object of UserDetails) must have object of User entity class 
+
+
+UserDetails interface
+=====================
+Implementation of this interface must be done
+Spring framework will call methods of this interface during authentication and authorization
+
+return roles.stream().map(role->new SimpleGrantedAuthority("ROLE_"+role.getRole())).collect(Collectors.toList());

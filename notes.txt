@@ -1,0 +1,15 @@
+Spring security
+===============
+It is also a framework
+We will use this framework to secure our APIs as well as web application
+We can implement following two security feature by this framework
+1)Authentication
+2)Authorization
+
+
+Inmemory authentication
+========================
+We will have to configure username,password and roles here
+Spring security framework will keep it into memory
+Password must be given in encrypted form
+We can create java code configuration here
